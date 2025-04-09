@@ -8,38 +8,48 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0; 
+            padding: 0;
         }
         .header {
             background-color: #1a2a4a;
             color: white;
             padding: 10px 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;  
             align-items: center;
-        } 
+            position: sticky; /* La propiedad position aquí */
+            top: 0; /* Mantiene el header visible al desplazarse */
+            z-index: 1000; /* Prioridad de visualización */
+        }
         .header img {
             margin-left: 20px;
+            max-width: 100px; /* Responde a tamaños de pantalla */
         }
         .nav {
             margin-right: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Diseño responsivo */
         }
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 0.9em; /* Ajuste en pantallas pequeñas */
         }
         .main {
             background-color: #4a2a1a;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 50px 20px; /* Ajuste para márgenes responsivos */
         }
         .main h1 {
             font-size: 2em;
         }
         .main .buttons {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Diseño responsivo */
         }
         .main .buttons a {
             background-color: #d4a15a;
@@ -47,14 +57,29 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin: 0 10px;
+            margin: 5px; /* Espaciado entre botones */
         }
         .main .buttons a.visit {
             background-color: #a1a1a1;
         }
         .main img {
             margin-top: 20px;
-            width: 200px;
+            width: 100%; /* Imagen completamente responsiva */
+            max-width: 200px; /* Limita el tamaño máximo */
+        }
+        @media screen and (max-width: 768px) {
+            .header img {
+                max-width: 80px;
+            }
+            .main h1 {
+                font-size: 1.5em;
+            }
+            .main {
+                padding: 30px 15px;
+            }
+            .nav a {
+                font-size: 0.8em; /* Ajuste adicional para pantallas pequeñas */
+            }
         }
     </style>
 </head>

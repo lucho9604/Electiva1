@@ -58,7 +58,7 @@
     </div>
     <div class="container">
         <div class="pet-card">
-            <img src="perro1.jpg" alt="Firulais">
+            <img src="imagenes/perro1.jpg" alt="Firulais">
             <div class="pet-info">
                 <h2>Firulais</h2>
                 <p>Edad: 3 años</p>
@@ -67,11 +67,29 @@
             </div>
         </div>
         <div class="pet-card">
-            <img src="gata1.jpg" alt="Misha">
+            <img src="imagenes/gata1.jpg" alt="Misha">
             <div class="pet-info">
                 <h2>Misha</h2>
                 <p>Edad: 2 años</p>
                 <p>Personalidad: Tranquila y amorosa</p>
+                <a href="#" class="adopt-btn">Adoptar</a>
+            </div>
+        </div>
+        <div class="pet-card">
+            <img src="imagenes/perro2.jpg" alt="Firulais">
+            <div class="pet-info">
+                <h2>Oddie</h2>
+                <p>Edad: 4 años</p>
+                <p>Personalidad: Cariñoso y noble</p>
+                <a href="#" class="adopt-btn">Adoptar</a>
+            </div>
+        </div>
+        <div class="pet-card">
+            <img src="imagenes/gata2.jpg" alt="Misha">
+            <div class="pet-info">
+                <h2>wiskas</h2>
+                <p>Edad: 5años</p>
+                <p>Personalidad: Tranquila y amorosa, noble</p>
                 <a href="#" class="adopt-btn">Adoptar</a>
             </div>
         </div>

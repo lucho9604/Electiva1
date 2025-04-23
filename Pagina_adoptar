@@ -28,6 +28,12 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Added transition for smooth hover effect */
+        }
+        .pet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
         .pet-card img {
             width: 120px;
@@ -48,6 +54,11 @@
             padding: 8px 15px;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
+            /* Added transition for button hover */
+        }
+        .adopt-btn:hover {
+            background-color: #b38a3a;
         }
     </style>
 </head>
@@ -88,7 +99,7 @@
             <img src="imagenes/gata2.jpg" alt="Misha">
             <div class="pet-info">
                 <h2>wiskas</h2>
-                <p>Edad: 5años</p>
+                <p>Edad: 5 años</p>
                 <p>Personalidad: Tranquila y amorosa, noble</p>
                 <a href="#" class="adopt-btn">Adoptar</a>
             </div>
@@ -97,3 +108,4 @@
     </div>
 </body>
 </html>
+
